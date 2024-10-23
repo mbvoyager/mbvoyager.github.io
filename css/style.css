@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
+:root {
+  /* Material Design Guidelines for dark themes*/
+  --background: #121212;
+  --elevation-02dp: #ffffff12;
+  --elevation-24dp: #ffffff29;
+
+  --institute-accent-1: #9c0054;
+  --institute-accent-2: #2056ae;
+  --linkedin: #0072b1;
+  --researchgate: #0cb;
+  --orcid: #a6ce39;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--background);
+  margin: 0 16px;
+}
+
+.profile-picture {
+  display: block;
+  height: 164px;
+  width: 164px;
+  margin: 32px auto 16px;
+  border-radius: 50%;
+}
+
+.risk {
+  color: var(--institute-accent-1);
+  font-weight: 600;
+}
+
+.reliability {
+  color: var(--institute-accent-2);
+  font-weight: 600;
+}
+
+.name {
+  color: white;
+  display: block;
+  font-weight: 600;
+  text-align: center;
+}
+
+.text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+  text-align: center;
+  font-style: italic;
+  max-width: 675px;
+  margin: 16px auto 0;
+}
+
+.footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  width: 100%;
+  color: gray;
+  text-align: center;
+  background-color: #121212;
+  padding: 5px 0;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  max-width: 675px;
+  margin: 16px auto 0;
+}
+
+.link {
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--elevation-02dp);
+}
+
+.link:hover {
+  background-color: var(--elevation-24dp);
+}
+
+.icon {
+  margin-right: 4px;
+}
+
+.linkedin {
+  color: var(--linkedin);
+}
+
+.researchgate {
+  color: var(--researchgate);
+}
+
+.fa-scholar {
+  content: url("/img/google-scholar.svg");
+  height: 1em;
+  width: auto;
+}
+
+.scholar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orcid {
+  color: var(--orcid);
+}
