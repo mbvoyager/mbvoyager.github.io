@@ -120,3 +120,106 @@ ol.refs .slides {
   color: var(--text-muted);
   font-size: 0.85rem;
 }
+
+/* Poll */
+.options {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.option {
+  font: inherit;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--elevation-08dp);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.option:hover,
+.option:focus-visible {
+  background-color: var(--elevation-24dp);
+  outline: none;
+}
+
+.option[aria-pressed="true"] {
+  border-color: var(--institute-accent-1);
+  background-color: #9c005433;
+}
+
+.option:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.status {
+  min-height: 1.5em;
+  font-size: 1.05rem;
+}
+
+.status.ok {
+  color: #8fd18f;
+}
+
+.status.error {
+  color: #ff8a8a;
+}
+
+/* Results */
+.bar-row {
+  display: grid;
+  grid-template-columns: 4.5em 1fr 5.5em;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.bar-track {
+  background-color: var(--elevation-02dp);
+  border-radius: 6px;
+  height: 26px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--institute-accent-2), var(--institute-accent-1));
+  width: 0;
+  transition: width 0.6s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+th,
+td {
+  padding: 6px 8px;
+  text-align: right;
+  border-bottom: 1px solid var(--elevation-08dp);
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+button.plain {
+  font: inherit;
+  color: white;
+  background-color: var(--elevation-08dp);
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button.plain:hover {
+  background-color: var(--elevation-24dp);
+}
